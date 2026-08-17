@@ -1,0 +1,190 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "bc09e5bb-20ac-4f1f-b061-f6310617c0c7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your Name:  Jagan A\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Jagan A\n",
+      "Hello Jagan A, welcome to Python programming\n"
+     ]
+    }
+   ],
+   "source": [
+    "string1 = \"Hello \"\n",
+    "name = input(\"Enter your Name: \")\n",
+    "\n",
+    "string2 = name\n",
+    "\n",
+    "# Concatenate string1 and string2\n",
+    "result = string1 + string2\n",
+    "print(result)\n",
+    "\n",
+    "# Concatenate string3\n",
+    "string3 = \", welcome to Python programming\"\n",
+    "result = result + string3\n",
+    "\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "7fd3ccd2-814d-4606-85b4-03757f71ce79",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "First character: H\n",
+      "Last character: g\n",
+      "First 5 characters: Hello\n",
+      "Last 11 characters: programming\n",
+      "Reverse: gnimmargorp nohtyP ot emoclew ,A nagaJ olleH\n",
+      "Python: Python\n"
+     ]
+    }
+   ],
+   "source": [
+    "# a. Print the first character\n",
+    "print(\"First character:\", result[0])\n",
+    "\n",
+    "# b. Print the last character\n",
+    "print(\"Last character:\", result[-1])\n",
+    "\n",
+    "# c. Print the first 5 characters\n",
+    "print(\"First 5 characters:\", result[:5])\n",
+    "\n",
+    "# d. Print the last 11 characters\n",
+    "print(\"Last 11 characters:\", result[-11:])\n",
+    "\n",
+    "# e. Print the string in reverse\n",
+    "print(\"Reverse:\", result[::-1])\n",
+    "\n",
+    "# f. Print the word \"Python\" using slicing\n",
+    "python_position = result.index(\"Python\")\n",
+    "print(\"Python:\", result[python_position:python_position + 6])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "f345f554-0563-447a-9400-49860ea321d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Uppercase: PYTHON BEGINNER TUTORIAL\n",
+      "Lowercase: python beginner tutorial\n",
+      "Capitalize: Python beginner tutorial\n",
+      "Count of 't': 3\n",
+      "Replace: Machine Learning beginner tutorial\n",
+      "Combined tuple: (10, 20, 30, 40, 50, 60)\n",
+      "Repeated 3 times: (10, 20, 30, 40, 50, 60, 10, 20, 30, 40, 50, 60, 10, 20, 30, 40, 50, 60)\n",
+      "3rd element: 30\n",
+      "First three elements: (10, 20, 30)\n",
+      "Last three elements: (40, 50, 60)\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "strM = \"Python beginner tutorial\"\n",
+    "\n",
+    "# a. Convert the sentence to uppercase\n",
+    "print(\"Uppercase:\", strM.upper())\n",
+    "\n",
+    "# b. Convert the sentence to lowercase\n",
+    "print(\"Lowercase:\", strM.lower())\n",
+    "\n",
+    "# c. Capitalize the sentence\n",
+    "print(\"Capitalize:\", strM.capitalize())\n",
+    "\n",
+    "# d. Count the total number of occurrences of 't'\n",
+    "print(\"Count of 't':\", strM.count(\"t\"))\n",
+    "\n",
+    "# e. Replace \"Python\" with \"Machine Learning\"\n",
+    "print(\"Replace:\", strM.replace(\"Python\", \"Machine Learning\"))\n",
+    "\n",
+    "\n",
+    "\n",
+    "# TUPLES\n",
+    "\n",
+    "\n",
+    "# Create first tuple\n",
+    "tuple1 = (10, 20, 30)\n",
+    "\n",
+    "# Create second tuple\n",
+    "tuple2 = (40, 50, 60)\n",
+    "\n",
+    "# a. Concatenate the two tuples\n",
+    "t_combine = tuple1 + tuple2\n",
+    "print(\"Combined tuple:\", t_combine)\n",
+    "\n",
+    "# b. Repeat the elements of t_combine 3 times\n",
+    "print(\"Repeated 3 times:\", t_combine * 3)\n",
+    "\n",
+    "# c. Access the 3rd element\n",
+    "print(\"3rd element:\", t_combine[2])\n",
+    "\n",
+    "# d. Access the first three elements\n",
+    "print(\"First three elements:\", t_combine[:3])\n",
+    "\n",
+    "# e. Access the last three elements\n",
+    "print(\"Last three elements:\", t_combine[-3:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3a307b88-55be-4793-ace8-33bccc59b97a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e5c13505-75bd-446c-8dd9-f93ebf9aafea",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
